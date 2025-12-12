@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%; 
+    width: 100%;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #ff9900; 
+}
+.space{
+    padding: 20px;
+}
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 48px;
+}
+/*tabel hasil*/
+.table-header {
+    width: 90%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 84px 147px 314px 230px 189px;
+    background-color: #343a40;
+    color: white;
+    padding: 16px;
+    font-weight: 600;
+    border-radius: 12px 12px 0 0;
+    text-align: left;
+}
+
+/* WRAPPER TABEL */
+.warp-table {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+/* TABEL */
+.warp-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ROW */
+.hasil-table tr td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hasil-table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.hasil-table tr:hover {
+    background-color: #efefef;
+}
+
+.rank-1 {
+    background-color: #ffe9aa !important;
+    color: #8e5500;
+    font-weight: bold;
+}
+
+.hasil-table tr:last-child td {
+    border-bottom: none;
+}
+.hasil-table td:nth-child(4),
+.table-header div:nth-child(4) {
+    width: 120px;   
+}
+
+.warp-table::-webkit-scrollbar {
+    width: 10px;
+}
+
+.warp-table::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 10px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+}
+
+/*options*/
+.container {
+    display: flex;
+    width: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.diagnosa-form{
+    width: 100%;
+    max-width: auto; 
+    margin: 0px auto;
+    padding: 15px;
+}
+
+.kriteria-table {
+    width: 90%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+    background-color: rgb(255, 247, 247); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+/* Styling Header Tabel */
+.kriteria-table thead {
+    background-color: #343a40;
+}
+
+.kriteria-table th {
+    color: #ffe9aa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.kriteria-table tbody tr {
+    border-bottom: 1px solid #e0e0e0; 
+    transition: background-color 0.3s;
+}
+
+.kriteria-table tbody tr:hover {
+    background-color: rgba(255, 153, 0, 0.05); 
+}
+
+.kriteria-table td {
+    padding: 15px;
+    color: #343a40;
+}
+
+.kriteria-table td:first-child {
+    font-weight: 600; 
+    width: 25%; 
+}
+
+.kriteria-table td:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 12px 20px; 
+    align-items: center;
+}
+
+.kriteria-table label {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap; 
+    width: auto;        
+    cursor: pointer;
+    line-height: 1.5; 
+    text-align: left;
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.hero-text{
+    text-align: center;
+}

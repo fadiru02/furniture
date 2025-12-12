@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%; 
+    position: absolute; 
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #ff9900; 
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    min-height: 550px; 
+    padding-top: 80px;
+    background-color: #f8f8f8;
+    overflow: hidden; 
+    align-items: center; 
+}
+
+.hero-text-container {
+    padding: 0 8%;
+    width: 50%;
+    z-index: 5;
+    background: linear-gradient(to right, white 60%, transparent); 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+}
+
+.hero-text-container h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #333; 
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.hero-text-container h1:first-line {
+    color: #ff9900; 
+}
+
+.hero-text-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.diagnosa-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.diagnosa-button a {
+    text-align: center;
+}
+
+.diagnosa-button:hover {
+    background-color: #e68a00;
+}
+
+.hero-image-box {
+    position: absolute;
+    top: 50%; 
+    right: 8%; 
+    transform: translateY(-50%); 
+    width: 700px; 
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 5px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    z-index: 3; 
+}
+
+.interiors-section {
+    padding: 60px 8%;
+    background-color: white;
+}
+
+.interiors-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.interiors-content {
+    display: flex;
+    gap: 30px;
+}
+
+.interior-large {
+    flex: 2;
+    position: relative;
+}
+
+.image-large {
+    height: 400px; 
+    background-color: #666; 
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nav-arrows button {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Interior Kecil Kanan */
+.interior-small-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.interior-card {
+    display: flex;
+    gap: 15px;
+}
+
+.image-small {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #eee; 
+    flex-shrink: 0;
+}
+
+.card-text h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-text p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.read-more {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #ff9900; 
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
