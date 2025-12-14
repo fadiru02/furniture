@@ -147,7 +147,7 @@ nav a.active {
     width: 90%; 
     margin: 20px auto; 
     border-collapse: collapse; 
-    background-color: rgb(255, 247, 247); 
+    background-color: #f3f3f3; 
     border-radius: 8px; 
     overflow: hidden; 
 }
@@ -157,7 +157,7 @@ nav a.active {
 }
 
 .kriteria-table th {
-    color: #ffe9aa;
+    color: #f7f7f7;
     padding: 12px 15px;
     text-align: left;
     font-weight: bold;
@@ -170,7 +170,7 @@ nav a.active {
 }
 
 .kriteria-table tbody tr:hover {
-    background-color: rgba(255, 153, 0, 0.05); 
+    background-color:#e8e8e8;
 }
 
 .kriteria-table td {
