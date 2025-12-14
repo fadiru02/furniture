@@ -2,11 +2,8 @@
 
 $is_submitted = true; 
 $hasil_rekomendasi = $hasil_rekomendasi ?? []; 
-
-// --- PERBAIKAN PENTING ---
 $desain_pilihan = $_POST['desain'] ?? "";
 
-// Jika hasil select bukan array (karena tidak pakai multiple), jadikan array agar aman
 if (!is_array($desain_pilihan)) {
     $desain_pilihan = [$desain_pilihan];
 }

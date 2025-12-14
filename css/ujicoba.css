@@ -42,7 +42,7 @@ nav a.active {
     text-align: center;
     padding: 30px 48px;
 }
-/*tabel hasil*/
+
 .table-header {
     width: 90%;
     margin: 0 auto; 
@@ -56,7 +56,7 @@ nav a.active {
     text-align: left;
 }
 
-/* WRAPPER TABEL */
+
 .warp-table {
     width: 90%;
     margin: 0 auto;
@@ -67,13 +67,13 @@ nav a.active {
     border-top: none;
 }
 
-/* TABEL */
+
 .warp-table table {
     width: 100%;
     border-collapse: collapse;
 }
 
-/* ROW */
+
 .hasil-table tr td {
     padding: 15px;
     text-align: left;
@@ -146,7 +146,6 @@ nav a.active {
     overflow: hidden; 
 }
 
-/* Styling Header Tabel */
 .kriteria-table thead {
     background-color: #343a40;
 }
