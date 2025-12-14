@@ -43,23 +43,29 @@ nav a.active {
     padding: 30px 48px;
 }
 
-.table-header {
+       
+.table-wrapper {
     width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+
+.table-header {
     display: grid;
-    grid-template-columns: 84px 147px 314px 230px 189px;
+    grid-template-columns: 62px 145px 240px 185px 180px 200px;
     background-color: #343a40;
     color: white;
     padding: 16px;
     font-weight: 600;
     border-radius: 12px 12px 0 0;
     text-align: left;
+    gap: 0;
 }
 
+.table-header > div {
+    padding: 0;
+}
 
 .warp-table {
-    width: 90%;
-    margin: 0 auto;
     max-height: 350px;
     overflow-y: auto;
     border-radius: 0 0 12px 12px;
@@ -67,15 +73,19 @@ nav a.active {
     border-top: none;
 }
 
-
-.warp-table table {
+.hasil-table {
     width: 100%;
     border-collapse: collapse;
 }
 
+.hasil-table tbody tr {
+    display: grid;
+    grid-template-columns: 62px 145px 240px 185px 180px 200px;
+    gap: 0;
+}
 
 .hasil-table tr td {
-    padding: 15px;
+    padding: 15px 16px;
     text-align: left;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -96,10 +106,6 @@ nav a.active {
 
 .hasil-table tr:last-child td {
     border-bottom: none;
-}
-.hasil-table td:nth-child(4),
-.table-header div:nth-child(4) {
-    width: 120px;   
 }
 
 .warp-table::-webkit-scrollbar {
@@ -201,4 +207,69 @@ nav a.active {
 
 .hero-text{
     text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+footer {
+    background-color: #ff9900; 
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.submit-area {
+    text-align: center;
+    margin-top: 20px;
+}
+.submit-area button {
+    background-color: #ff9900; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.text-center {
+    padding: 20px;
+    text-align: center;
+}
+.text-center a {
+    background-color: #ff9900; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }

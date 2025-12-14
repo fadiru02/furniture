@@ -93,6 +93,16 @@ include 'config/fuzzyfunction.php';
         </p>
     </div>
 </div>
-
+<footer>
+        <div class="footer-left">
+            <p>PT. BAROKAH</p>
+            <p>©2025. All rights reserved</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">About Us</a>
+            <a href="#">Partnership</a>
+            <a href="#">Privacy Police</a>
+        </div>
+    </footer>
 </body>
 </html>

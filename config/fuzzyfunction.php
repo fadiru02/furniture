@@ -18,17 +18,17 @@ try {
     die("Koneksi database GAGAL! Error: " . $e->getMessage());
 }
 
-function fuzzy_membership($nilai_aktual, $nilai_target, $tipe = 'naik')
+function fuzzy_membership($materials, $rules, $tipe = 'naik')
 {
-    if ($nilai_target == 0 || $nilai_target === null) return 1;
+    if ($rules == 0 || $rules === null) return 1;
     
     if ($tipe == 'naik') {
-        $derajat = $nilai_aktual / $nilai_target;
+        $derajat = $materials / $rules;
         return min($derajat, 1);
+        
     } elseif ($tipe == 'turun') {
-
-        if ($nilai_aktual <= $nilai_target) return 1;
-        $derajat = $nilai_target / $nilai_aktual;
+        if ($materials <= $rules) return 1;
+        $derajat = $rules / $materials;
         return max($derajat, 0); 
     }
     
@@ -165,7 +165,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($aturan_aktif)) {
-        $error_message = "Mohon pilih minimal 1 kriteria";
+        $error_message = "Opsinya tolong dipilih ya sayang ";
     } else {
 
         $selM = $pdo->query("SELECT * FROM Material");

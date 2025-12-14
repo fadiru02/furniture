@@ -31,7 +31,7 @@
     <footer>
         <div class="footer-left">
             <p>PT. BAROKAH</p>
-            <p>©2010. All rights reserved</p>
+            <p>©2025. All rights reserved</p>
         </div>
         <div class="footer-right">
             <a href="#">About Us</a>

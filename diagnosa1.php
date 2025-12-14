@@ -11,21 +11,6 @@ include 'config/fuzzyfunction.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagnosa Material Furniture</title>
     <link rel="stylesheet" href="/furniture/css/ujicoba.css">
-    <style>
-        select {
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: white;
-            cursor: pointer;
-        }
-        select:focus {
-            outline: none;
-            border-color: #4CAF50;
-        }
-    </style>
 </head>
 
 <body>
@@ -164,5 +149,16 @@ include 'config/fuzzyfunction.php';
         </div>
     </form>
 </div>
+<footer>
+        <div class="footer-left">
+            <p>PT. BAROKAH</p>
+            <p>©2025. All rights reserved</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">About Us</a>
+            <a href="#">Partnership</a>
+            <a href="#">Privacy Police</a>
+        </div>
+    </footer>
 </body>
 </html>
